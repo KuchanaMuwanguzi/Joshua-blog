@@ -27,4 +27,21 @@ function includeHTML() {
   }
   includeHTML();
 
+  document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting via the browser
+
+    var formData = new FormData(this);
+
+    fetch('/subscribe', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('confirmationMessage').textContent = data.message;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
   

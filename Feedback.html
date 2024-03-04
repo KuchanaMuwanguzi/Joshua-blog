@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutme</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="/CSS/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/CSS/styles.css">
     <script src="/CSS/bootstrap/js/bootstrap.bundle.js"></script>
@@ -11,7 +11,6 @@
 <body>
     <div w3-include-html="/include/navbar.html"></div>
     <script src="/Java/include.js"></script>
-    
 
     <div class="container-fluid">
         <div class="row flex-nowrap">
@@ -61,29 +60,20 @@
                 </div>
             </div>
 
-
-            <div class="col py-3">
-              
-
-                <div class = "row">
-
-                    <div class="col">
-                      <h2> About Me</h2>
-                      <img src="/Blog/images/003.jpg" width="90%" alt="Smart guy"> 
-                    </div>
-            
-                    <div class="col" style="color: black;">
-          
-                    <p> My values are making a difference, commitment, honesty, efficiency and reliability. I am pationate about all that I do and give my all into accomplishing my goals. I am an organised, efficient and hard working person, and am willing to discover and accept new ideas which can be put into practice effectively. I am a good listener and learner, able to communicate well with a group and on an individual level. I am able to motivate and direct my talents and skills to meet objectives. </p>
-                    
-                    </div>
-          
-                  </div>
-                
+            <div class="container">
+                <h2>Feedback Form</h2>
+                <form action="submit_feedback.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+        
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="6" required></textarea>
+        
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-            </div>
-        </div>
-    </div>
-    
 </body>
 </html>

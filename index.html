@@ -7,13 +7,48 @@
     <title>Kuchana's blog</title>
     <link rel="stylesheet" href="CSS/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/CSS/styles.css">
-    <script src="/CSS/bootstrap/js/bootstrap.bundle.js"></script>
-    <div w3-include-html="/include/navbar.html"></div>
-    <script src="/Java/include.js"></script>
-
+    
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
+        <a class="navbar-brand" href="#">SavedKuchana</a>
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" 
+        id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blogs
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/Blog/jesuslife.html">JesusLife</a></li>
+                        <li><a class="dropdown-item" href="/Blog/journeys.html">The Journey</a></li>
+                        <li><a class="dropdown-item" href="/Blog/walokoka.html">Walokoka?</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container-fluid" id="slider-container">
         <div class="raw">
             <div class="col">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -24,21 +59,21 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="Blog/images/real4.jpg" class="d-block w-100" alt="slide1">
+                        <img src="Blog/images/real1.jpg" class="d-block w-100" alt="slide1">
                         <div class="carousel-caption d-none d-md-block">
                           <h1>PERSPECTIVE</h1>
                           <p>HOW WE SEE THINGS SPEAKS ALOT TO THE RESULTS WE GET.</p>
                         </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
-                        <img src="Blog/images/real1.jpg" class="d-block w-100" alt="">slide2
+                        <img src="Blog/images/real3.jpg" class="d-block w-100" alt="slide2">
                         <div class="carousel-caption d-none d-md-block">
                           <h1>CELEBRATION</h1>
                           <p>WE WIN SOME, LOSE SOME BUT WE CELEBRATE ALL THE WAY.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="Blog/images/real2.jpg" class="d-block w-100" alt="slide3">
+                        <img src="Blog/images/real4.jpg" class="d-block w-100" alt="slide3">
                         <div class="carousel-caption d-none d-md-block">
                           <h1>SUPPORT</h1>
                           <p>WE CHOOSE TO BE THE WALLS THAT SUPPORT THE WEARY.</p>
@@ -57,5 +92,25 @@
             </div>
         </div>
     </div>
+    <footer>
+      <div class = "row">
+
+        <div class="col">
+          <h2> CONTACT US</h2>
+       <p> <strong> Kuchana Muwanguzi Joshua </strong> </p>
+        <p> Telephone: +256 706 324 199</p>
+        <p><a href="mailto:joshkuchi@gmail.com">joshkuchi@gmail.com</a></p>
+        </div>
+
+        <div class="col">
+
+          <img src="/Blog/images/facebook.png" width="7%"  alt="facebook">
+          <img src="/Blog/images/X.png" width="5%"  alt="X">
+          <img src="/Blog/images/YouTubeg.png" width="15%"  alt="YouTube">
+          <img src="/Blog/images/Instagram.png" width="5%"  alt="Instagram">
+        </div>
+      </div>
+    </footer>
+    <script src="/CSS/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>

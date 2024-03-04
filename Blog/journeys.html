@@ -3,13 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology</title>
+    <title>Journeys</title>
     <link rel="stylesheet" href="/CSS/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/CSS/styles.css">
    <script src="/CSS/bootstrap/js/bootstrap.bundle.js"></script>
 </head>
 <body>
+    
     <div w3-include-html="/include/navbar.html"></div>
     <script src="/Java/include.js"></script>
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-info">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Kuchana Muwanguzi Joshua</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="/about.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline" > About Me</span>
+                            </a>
+                        </li>
+                        <li>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="/Gallery.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Gallery</span></a>
+                                </li>
+                                <li>
+                                    <a href="/Subscribe.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Subscribe</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Feedback.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Feedback</span> </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/Blog/images/way.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1"> Useful Links</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="/about.html">AboutUs</a></li>
+                            <li><a class="dropdown-item" href="/ContactUs.html">ContactUs</a></li>
+                            <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="/Subscribe.html">Subscribe</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
